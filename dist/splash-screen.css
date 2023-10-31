@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap");
+html,
+body {
+  font-family: "Kanit";
+}
+body.page-loading {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.splash-screen {
+  display: none;
+}
+
+.page-loading .splash-screen {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Kanit", Helvetica, "sans-serif";
+  background: linear-gradient(140deg, rgb(155, 106, 155) 0%, rgb(89, 57, 139) 65%, rgb(65, 20, 104) 100%);
+  color: #5e6278;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.page-loading .splash-screen span {
+  font-size: 16px;
+  color: #ffffff;
+  transition: none !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-loading .splash-screen img {
+  margin-left: calc(100vw - 100%);
+  margin-bottom: 30px;
+  width: 200px;
+  height: 50px !important;
+}
+
+html[data-bs-theme="dark"] .page-loading .splash-screen {
+  background-color: #151521;
+  color: #ffffff;
+}
+
+.splash-screen .dark-logo {
+  display: none;
+}
+
+.splash-screen .light-logo {
+  display: block;
+}
+
+html[data-bs-theme="dark"] .splash-screen .light-logo {
+  display: none;
+}
+
+html[data-bs-theme="dark"] .splash-screen .dark-logo {
+  display: block;
+}
