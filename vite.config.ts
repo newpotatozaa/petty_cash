@@ -16,5 +16,6 @@ export default defineConfig({
   base: "/webapp/",
   build: {
     chunkSizeWarningLimit: 3000,
+    target: 'esnext'
   },
 });

@@ -2,6 +2,8 @@
   <div :class="widgetClasses" class="card">
     <div class="p-10 col-lg-12 col-md-12 col-sm-12">
       
+
+      <hr>
       <div class="card-title ">
         <div class="row">
           <div class="col-12 col-lg-2">

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PETTY CASH" />
+  <link rel="icon" href="/webapp/bizcar.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700">
+  <link rel="stylesheet" href="/webapp/splash-screen.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETTY CASH</title>
+  <script type="module" crossorigin src="/webapp/assets/index.673a3d36.js"></script>
+  <link rel="stylesheet" href="/webapp/assets/index.b7b48d3f.css">
+</head>
+<body class="page-loading">
+    <!-- Setup on page load-->
+    <script>
+      let themeMode = "system";
+      if (localStorage.getItem("kt_theme_mode_value")) {
+          themeMode = localStorage.getItem("kt_theme_mode_value");
+      }
+      if (themeMode === "system") {
+          themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-bs-theme", themeMode);
+    </script>
+    <div id="app"></div>
+    <!-- Loading markup -->
+    <div id="splash-screen" class="splash-screen">
+        <img src="/webapp/media/logo/bizcar_l.png" class="light-logo" alt="bizcar logo" />
+        <span>Loading ...</span>
+    </div>
+    
+</body>
+</html>
