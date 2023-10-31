@@ -1,62 +1,7 @@
 <template>
   <div :class="widgetClasses" class="card">
     <div class="p-10 col-lg-12 col-md-12 col-sm-12">
-      <div class="card-title ">
-        <div class="row">
-          <div class="col-12 col-lg-2">
-            <label class="fs-5 fw-semibold pt-5 min-w-150px">บริษัทเจ้าหนี้ : </label>
-          </div>
-          <div class="col-12 col-lg-4 text-start pt-2">
-            <select id="companySelect" class="form-control selectpicker" v-model="selectedCompany">
-              <option value="">เลือก</option>
-              <option v-for="branchData in vendorData.data" :value="branchData['VenderCode']"
-                :key="branchData['VenderCode']"> {{ branchData['VenderName'] }}
-              </option>
-            </select>
-            <p>Selected Company: {{ selectedCompany }}</p>
-          </div>
-
-
-
-          <div class="col-12 col-lg-2">
-            <label class="fs-5 fw-semibold pt-5 min-w-150px">วันที่ขอเบิก : </label>
-          </div>
-          <div class="col-12 col-lg-4 text-start pt-2">
-            <el-form-item prop="datePick">
-              <el-date-picker v-model="targetData.dueDate1" type="date" placeholder="Select a date" :teleported="false"
-                popper-class="override-styles" name="dueDate1" value-format="YYYY-MM-DD" format="DD-MM-YYYY"  class="w-100"/>
-            </el-form-item>
-          </div>
-          <div class="col-12 col-lg-4 text-start">
-            <el-form-item prop="datePick">
-              <el-date-picker v-model="targetData.dueDate2" type="date" placeholder="Select a date" :teleported="false"
-                popper-class="override-styles" name="dueDate2" value-format="YYYY-MM-DD" format="DD-MM-YYYY" class="w-100"/>
-            </el-form-item>
-          </div>
-
-
-
-          <div class="col-12 col-lg-4 pt-5">
-            <div class="row">
-              <div class="col-2 col-lg-2">
-                <!-- <label class="fs-5 fw-semibold pt-2 min-w-150px">วันที่ขอเบิก : </label> -->
-              </div>
-              <div class="col-10 col-lg-10">
-
-
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-2 text-end">
-            <button class="btn btn-success" @click="onDataTable">
-              <KTIcon icon-name="" icon-class="fs-2" />
-              Search
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <hr>
+      
       <div class="card-title ">
         <div class="row">
           <div class="col-12 col-lg-2">
